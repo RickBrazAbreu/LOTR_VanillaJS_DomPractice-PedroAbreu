@@ -195,7 +195,7 @@ function beautifulStranger() {
 	console.log('7: beautifulStranger')
 	const strider = document.querySelector("#Strider")
 	strider.innerText = "Aragorn"
-	// change the `'Strider'` text to `'Aragorn'`
+	// change the `'Strider'` text to `'Aragorn'`ccc
 }
 
 // COMMIT YOUR WORK
