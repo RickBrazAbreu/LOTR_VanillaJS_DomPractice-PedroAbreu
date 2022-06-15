@@ -295,12 +295,12 @@ function itsDangerousToGoAlone() {
 	
 	//lands[2].appendChild(hobbits[0 ,1])
 
-	// let Morddor = document.getElementById('Mordor')	
+	let Morddor = document.getElementById('Mordor')	
 
-	// // add a div with an id of `'mount-doom'` to `Mordor`
-	// newDivv = document.createElement('id')
-	// newDivv.setAttribute('id', 'mount-doom')
-	// Morddor.appendChild(newDivv)
+	// add a div with an id of `'mount-doom'` to `Mordor`
+	newDivv = document.createElement('id')
+	newDivv.setAttribute('id', 'mount-doom')
+	Morddor.appendChild(newDivv)
 
 	
 }
