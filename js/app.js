@@ -318,11 +318,11 @@ function weWantsIt() {
 	// Remove `the ring` from `Frodo` and give it to `Gollum`
 	// Move Gollum into Mount Doom
 	
-	// const MORDOR = document.getElementById("Mordor")
-	// const gollum = document.createElement('div')
-	// gollum.setAttribute('id', 'gollum')
+	const MORDOR = document.getElementById("Mordor")
+	const gollum = document.createElement('div')
+	gollum.setAttribute('id', 'gollum')
 	
-	// MORDOR.appendChild(gollum)
+	MORDOR.appendChild(gollum)
 	
 
 
