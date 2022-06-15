@@ -294,16 +294,30 @@ function itsDangerousToGoAlone() {
 	// take `Frodo` and `Sam` out of the fellowship and move // them to `Mordor`
 	
 	//lands[2].appendChild(hobbits[0 ,1])
+	for(let i = 0; i < 2 ; i++) {
+        document.getElementById(hobbits[i]).remove()
+        const ul = document.createElement("ul")
+        let li = document.createElement("li")
+        li.setAttribute("id", hobbits[i])
+        li.setAttribute("class", "hobbits")
+        ul.appendChild(li)
+        li.innerText = hobbits[i]
+        document.getElementById(lands[2]).appendChild(ul)
+        console.log(li)
+    }
 
-	let Morddor = document.getElementById('Mordor')	
+    const theRing = document.createElement('div')
+        theRing.setAttribute('id', 'the-ring')
+        theRing.setAttribute("class", 'magic-imbued-jewelry')
+        const frodo = document.getElementById("Frodo Baggins")
+        frodo.appendChild(theRing)
 
-	// add a div with an id of `'mount-doom'` to `Mordor`
-	newDivv = document.createElement('id')
-	newDivv.setAttribute('id', 'mount-doom')
-	Morddor.appendChild(newDivv)
-
-	
+        const mountDoom = document.createElement('div')
+    mountDoom.setAttribute('id', 'mount-doom')
+    document.getElementById(lands[2]).appendChild(mountDoom)
 }
+	
+
 
 // COMMIT YOUR WORK
 // The commit message should read: "Chapter 11 complete - Sam and Frodo are in Mordor and Mount Doom has been created"
@@ -339,14 +353,53 @@ function weWantsIt() {
 function thereAndBackAgain() {
 	console.log('13: thereAndBackAgain')
 	// // remove `Gollum` and `the Ring` from the document
-	document.getElementById('gollum ').remove()
+	for(let i = 0; i < 2 ; i++) {
+		document.getElementById(hobbits[i]).remove()
+		const ul = document.createElement("ul")
+		let li = document.createElement("li")
+		li.setAttribute("id", hobbits[i])
+		li.setAttribute("class", "hobbits")
+		ul.appendChild(li)
+		li.innerText = hobbits[i]
+		document.getElementById(lands[0]).appendChild(ul)
+		console.log(li)
+	}
+	for(let i = 0; i <2 ; i++) {
+		document.getElementById(hobbits[i]).remove()
+		const ul = document.createElement("ul")
+		document.getElementById(lands[1]).appendChild(ul)
+		let li = document.createElement("li")
+		li.setAttribute("id", hobbits[i])
+		li.setAttribute("class", "hobbits")
+		ul.appendChild(li)
+		li.innerText = hobbits[i]
+		console.log(li)
+		document.getElementById(lands[1]).appendChild(ul)
+	}
 
-	// Move all the `hobbits` back to `the shire`
-	const theShiire= document.getElementById('The-Shire')
-	const hobbitts = document.getElementsByClassName('hobbit')
+	for(let i = 0; i < hobbits.length ; i++) {
+		document.getElementById(hobbits[i]).remove()
+		const ul = document.createElement("ul")
+		document.getElementById(lands[1]).appendChild(ul)
+		let li = document.createElement("li")
+		li.setAttribute("id", hobbits[i])
+		li.setAttribute("class", "hobbits")
+		ul.appendChild(li)
+		li.innerText = hobbits[i]
+		console.log(li)
+		document.getElementById(lands[0]).appendChild(ul)
+	}
 
+	document.getElementById('gollum').remove()
+
+
+	const hobbitList = document.getElementById(hobbits[i])
+	document.getElementById(lands[0]).append(hobbitList)
 
 }
+
+
+
 
 // COMMIT YOUR WORK
 // The commit message should read: "Chapter 13 complete -Gollum and the ring are gone, the baddies are done, and the hobbits are back in the shire".
