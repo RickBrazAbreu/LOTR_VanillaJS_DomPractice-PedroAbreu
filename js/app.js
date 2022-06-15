@@ -273,10 +273,10 @@ function hornOfGondor() {
 	// Remove `Boromir` from the Fellowship
 	//const theFellowShi = document.getElementById('#the-fellowship')
 	
-	document.getElementById(buddies[4]).remove()
+	// document.getElementById(buddies[4]).remove()
 	
-	alert('Boromirs been killed by the Uruk-hai!')
-	alert('horn of gondor has been blown')
+	// alert('Boromirs been killed by the Uruk-hai!')
+	// alert('horn of gondor has been blown')
 
 
 
@@ -295,12 +295,12 @@ function itsDangerousToGoAlone() {
 	
 	//lands[2].appendChild(hobbits[0 ,1])
 
-	let Morddor = document.getElementById('Mordor')	
+	// let Morddor = document.getElementById('Mordor')	
 
-	// add a div with an id of `'mount-doom'` to `Mordor`
-	newDivv = document.createElement('id')
-	newDivv.setAttribute('id', 'mount-doom')
-	Morddor.appendChild(newDivv)
+	// // add a div with an id of `'mount-doom'` to `Mordor`
+	// newDivv = document.createElement('id')
+	// newDivv.setAttribute('id', 'mount-doom')
+	// Morddor.appendChild(newDivv)
 
 	
 }
@@ -318,11 +318,11 @@ function weWantsIt() {
 	// Remove `the ring` from `Frodo` and give it to `Gollum`
 	// Move Gollum into Mount Doom
 	
-	const MORDOR = document.getElementById("Mordor")
-	const gollum = document.createElement('div')
-	gollum.setAttribute('id', 'gollum')
+	// const MORDOR = document.getElementById("Mordor")
+	// const gollum = document.createElement('div')
+	// gollum.setAttribute('id', 'gollum')
 	
-	MORDOR.appendChild(gollum)
+	// MORDOR.appendChild(gollum)
 	
 
 
@@ -338,12 +338,12 @@ function weWantsIt() {
 
 function thereAndBackAgain() {
 	console.log('13: thereAndBackAgain')
-	// remove `Gollum` and `the Ring` from the document
-	document.getElementById('gollum ').remove()
+	// // remove `Gollum` and `the Ring` from the document
+	// document.getElementById('gollum ').remove()
 
-	// Move all the `hobbits` back to `the shire`
-	const theShiire= document.getElementById('The-Shire')
-	const hobbitts = document.getElementsByClassName('hobbit')
+	// // Move all the `hobbits` back to `the shire`
+	// const theShiire= document.getElementById('The-Shire')
+	// const hobbitts = document.getElementsByClassName('hobbit')
 
 
 }
